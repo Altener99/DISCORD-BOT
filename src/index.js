@@ -1,5 +1,9 @@
 const {Client, IntentsBitField} = require('discord.js');
 const env = require('dotenv').config();
+const Message = require('../models/messages');
+const connectDB = require('./database');
+
+connectDB();
 
 
 const client = new Client({
