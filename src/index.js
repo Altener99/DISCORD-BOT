@@ -58,7 +58,8 @@ client.on('messageCreate', (msg)=> {
            const {content, createdTimestamp} = msg;
            const {globalName, avatar, id} = msg.author;
            const date = new Date(createdTimestamp);
-           const formattedDate = date.toLocaleDateString();
+           
+           
 
            try{
 
@@ -66,7 +67,7 @@ client.on('messageCreate', (msg)=> {
 
             globalName:globalName,
             content:content,
-            date:formattedDate,
+            date:date,
             avatar:avatar,
             userId:id
 
@@ -80,7 +81,7 @@ client.on('messageCreate', (msg)=> {
             console.log(err);
            }
 
-           console.log(content, date.toLocaleString(), globalName,avatar);
+           console.log(content, date.toLocaleDateString(), globalName,avatar);
     }
 
     if(msg)
