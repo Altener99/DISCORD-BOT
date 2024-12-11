@@ -5,12 +5,11 @@ const messageSchema = new mongoose.Schema({
         globalName: {
     
             type: String,
-            required: true
         },
         content: {
     
             type: String,
-            required: true
+           
         },
         date: {
     
@@ -20,12 +19,10 @@ const messageSchema = new mongoose.Schema({
         avatar: {
     
             type: String,
-            required: true
         },
         userId: {
 
             type: String,
-            required: true
 
         }
     });
